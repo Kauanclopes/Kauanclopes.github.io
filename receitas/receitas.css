@@ -1,0 +1,170 @@
+/* receitas.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    color: #218838;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container principal */
+.ad1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Aumenta o espaço entre as colunas */
+    max-width: 1200px; /* Limita a largura do container */
+    width: 100%;
+    margin: 20px;
+}
+
+/* Estilos para a coluna de itens */
+.column1 {
+    flex: 1;
+    padding-right: 20px; /* Adiciona um pouco de espaço à direita da coluna 1 */
+}
+
+/* Estilos para a coluna de receita e imagem */
+.column2 {
+    flex: 2;
+}
+
+/* Estilos para a receita */
+.div-ingredientes, .div-preparo {
+    margin-bottom: 20px;
+}
+
+.div-ingredientes h3, .div-preparo h3 {
+    margin-top: 20px;
+}
+
+.div-ingredientes ol, .div-preparo p {
+    margin: 10px 0;
+}
+
+.div-preparo p {
+    line-height: 1.6;
+}
+
+/* Estilos para os produtos */
+.div-produtos-box {
+    background-color: #f8f8f8;
+    padding: 15px; /* Aumenta o padding interno */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Aumenta o espaçamento entre produtos */
+    display: flex;
+    align-items: center; /* Alinha itens no centro verticalmente */
+}
+
+.product-image {
+    width: 100px; /* Aumenta a largura da imagem */
+    height: 100px; /* Aumenta a altura da imagem */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px; /* Aumenta o espaçamento entre imagem e descrição */
+}
+
+.product-description {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    color: #218838;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o container do produto */
+.produto-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre elementos no container do produto */
+}
+
+/* Estilos para o input e botões */
+.produto {
+    width: 70px; /* Aumenta a largura do input */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-button {
+    background-color: #218838;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #1d6d34;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaço entre botões de controle */
+}
+
+.control-button {
+    background-color: #218838;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-button.minus {
+    margin-right: 5px;
+}
+
+.control-button:hover {
+    background-color: #1d6d34;
+}
+
+/* Estilos específicos para os containers */
+.column1 {
+    order: 1; /* Coloca a coluna de itens à esquerda */
+}
+
+.column2 {
+    order: 2; /* Coloca a coluna de receita e imagem à direita */
+}
+
+/* Centralização do container principal */
+.ad1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.accordion-body a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: black;
+}
+
+strong {
+    font-size: 2rem;
+    color: #1d6d34;
+    margin-left: 40rem;
+}
