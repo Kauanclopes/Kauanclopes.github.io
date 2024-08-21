@@ -494,13 +494,17 @@ footer {
 }
 
 .control-button.minus{
-    background:none;
-    color: red;
+    width: 30px;
+    height: 30px;
+    background:green;
+    color: white;
 }
 
 .control-button.plus{
-    background:none;
-    color: green;
+    width: 30px;
+    height: 30px;
+    background:green;
+    color: white;
 }
 
 
