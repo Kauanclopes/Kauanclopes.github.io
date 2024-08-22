@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações da Conta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid green;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .info-section {
+            margin-bottom: 20px;
+        }
+        .info-section h2 {
+            border-bottom: 1px solid green
+            ;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .info-section p {
+            margin: 5px 0;
+        }
+        .info-section .edit-btn {
+            color: #007BFF;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+            border-top: 2px solid green;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        .footer button {
+            background-color:green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+        .footer button.return {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+            
+            </div>
+            <h1>Informações da Conta</h1>
+            <div class="header-right">
+               
+            </div>
+        </header>
+
+        <section class="info-section">
+            <h2>Informações Pessoais</h2>
+            <div>
+                <img src="./public/images/logos/conta.png" alt="Foto do Perfil" class="profile-pic">
+                <div>
+                    <p><strong>Nome:</strong> João da Silva 
+                    <p><strong>Sobrenome:</strong> da Silva 
+                    <p><strong>Data de nascimento:</strong> 10/11/2002
+                    <p><strong>CPF:</strong> 90239423643
+                    <p><strong>E-mail:</strong> joao.silva@email.com 
+                    <p><strong>Telefone:</strong> +55 11 91234-5678 
+                    <p><strong>Sexo:</strong> Masculino
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Configurações de Segurança</h2>
+            <p><strong>Senha:</strong> Atualizada recentemente 
+            <p><strong>Autenticação de Dois Fatores:</strong> Ativada 
+        </section>
+
+        <section class="info-section">
+            <h2>Preferências de Comunicação</h2>
+            <p><strong>Notificações por e-mail:</strong> Ativado
+            <p><strong>Notificações por SMS:</strong> Desativado 
+            <p><strong>Compartilhar dados com parceiros:</strong> Ativado 
+        </section>
+
+        <div class="footer">
+            <button class="save-btn">Editar</button>
+            <button class="return" onclick="window.location.href='index.html'" id="sign-in">voltar</button>
+        </div>
+    </div>
+</body>
+</html>
