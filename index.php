@@ -103,7 +103,8 @@ $produtos = $conn->query("SELECT * FROM produtos");
             <label for="valor_frete">Valor do Frete</label>
         </div>
 
-        <button type="submit" class="btn waves-effect waves-light">Realizar Compra</button>
+      <button type="button" class="btn waves-effect waves-light" onclick="window.location.href='https://kauanclopes.github.io/'">
+        Realizar Compra
     </form>
 </div>
 
